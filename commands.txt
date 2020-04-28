@@ -1,6 +1,7 @@
 # Create Django Project
-$ docker-compose run app sh -c 
+$ docker-compose run --rm app sh -c 
 - "django-admin.py startproject app ."
 - "python manage.py test && flake8"
 - "python manage.py startapp core"
+- "python manage.py createsuperuser"
 
